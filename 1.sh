@@ -100,3 +100,15 @@ elif [ $MARKS -ge 80 ]; then
 else
     echo "Grade B or lower"
 fi
+
+#!/bin/bash
+echo -n "Enter three numbers: "
+read A B C
+
+if [ $A -ge $B ] && [ $A -ge $C ]; then
+    echo "$A is the largest number."
+elif [ $B -ge $A ] && [ $B -ge $C ]; then
+    echo "$B is the largest number."
+else 
+    echo "$C is the largest number."
+fi
