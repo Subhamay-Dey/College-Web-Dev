@@ -39,3 +39,19 @@ file_to_check="report.txt"
 # 1. If it succeeds, the && part runs.
 # 2. If it fails, the && part is skipped and the || part runs.
 [ -f "$file_to_check" ] && echo "$file_to_check exists." || echo "$file_to_check does NOT exist."
+
+
+7. Script to Check if File is Readable
+#!/bin/bash
+# We will check the file provided as the first argument ($1)
+filename="$1"
+if [ -z "$filename" ]; then
+  echo "Usage: $0 <filename>"
+  exit 1
+fi
+# Use the 'test' command with the -r flag
+if [ -r "$filename" ]; then
+  echo "The file '$filename' is readable."
+else
+  echo "The file '$filename' is NOT readable or does not exist."
+fi
