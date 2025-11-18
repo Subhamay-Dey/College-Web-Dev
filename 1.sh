@@ -27,3 +27,6 @@ echo "Hello, $name! Welcome to UNIX."
 
 #&& (AND):
 mkdir my_dir && cd my_dir
+
+#|| (OR):
+grep "error" app.log || echo "No errors found."
