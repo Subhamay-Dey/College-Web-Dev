@@ -24,3 +24,6 @@ echo -n "Please enter your name: "
 # Read the user's input into a variable called 'name'
 read name
 echo "Hello, $name! Welcome to UNIX."
+
+#&& (AND):
+mkdir my_dir && cd my_dir
