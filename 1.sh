@@ -10,3 +10,9 @@ echo "Hello, World!"
 echo -n "Enter your name: "
 read user_name
 echo "Hello, $user_name!"
+
+# !/bin/bash
+echo -n "Enter your firstname and lastname: "
+read firstname lastname
+echo "First Name: $firstname"
+echo "Last Name: $lastname"
