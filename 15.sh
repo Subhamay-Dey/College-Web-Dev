@@ -1,5 +1,7 @@
 #!/bin/bash
 
+---Script to calculate the sum of digits of a number
+
 echo -n "Enter an integer: "
 read NUM
 N=$NUM

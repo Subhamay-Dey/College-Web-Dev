@@ -1,5 +1,7 @@
 #!/bin/bash
 
+---Script to check if a string is a palindrome
+
 echo -n "Enter a string: "
 read INPUT_STRING
 

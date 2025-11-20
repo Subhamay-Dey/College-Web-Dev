@@ -1,5 +1,7 @@
 #!/bin/bash
 
+---Script to check for a leap year
+
 echo -n "Enter a year (e.g., 2024): "
 read YEAR
 
